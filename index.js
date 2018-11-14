@@ -20,7 +20,6 @@ app.get('/api/protected', ensureToken ,(req, res) => {
 		if(err) {
 			res.sendStatus(403);
 			console.log('error 403')
-			console.log('error 403')
 		} else {
 			res.json({
 				text: 'protected Response!',
